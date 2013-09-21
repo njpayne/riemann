@@ -1,4 +1,4 @@
-# The model below "pretends to "fakes" a linear regression and bootstraps the confidence interval on the slope.
+# The model below "pretends to or "fakes" a linear regression and bootstraps the confidence interval on the slope.
 
 set.seed(15723) # Set the seeed
 
@@ -14,7 +14,7 @@ mod1 <- lm(y ~ x) # Fit the model
 summary(mod1) # Review the model
 par(mfrow=c(2,2)) # Put the following plots into a 2 x 2 layout
 plot(mod1) # Review the plots of the data
-yHat <- fitted(mod1) # Generate a vector of fitted values
+ryHat <- fitted(mod1) # Generate a vector of fitted values
 # This vector is 101 rows x 1 column
 
 errors <- resid(mod1) # Grab the residuals from the model
