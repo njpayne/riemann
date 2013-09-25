@@ -61,7 +61,7 @@ x = seq(0,2000)
 lines(x,predict(rt1,newdata=list(elev=x)),col=2,lwd=3)
 lines(x,predict(rp4,newdata=list(elev=x)),col=3,lwd=3)
 lines(x,predict(glm1,newdata=list(elev=x),type="response"),col=4,lwd=3)
-legend(210,9.25, # places a legend at the appropriate place 
+legend(210,9.25 # places a legend at the appropriate place 
 c("tree()","rpart()", "glm()"), # puts text in the legend 
 lty=c(1,1), # gives the legend appropriate symbols (lines)     
 lwd=c(2.5,2.5, 2.5),col=c(2,3,4)) # Gives the legend lines correct colors and width
@@ -71,5 +71,5 @@ dev.off()
 rsq.rpart(rp4)
 tmp <- printcp(rp4)
 rsq.val <- 1-tmp[,c(3,4)]  
-rsq.val[nrow(rsq.val),]
+rsq.val[nrow(rsq.val),] # 0.2778699
 # Note that this R^2 is significantly higher than the tree model ...

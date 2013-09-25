@@ -3,6 +3,7 @@
 
 # ---------------------------------------------------------------------------
 # Some background ...
+library(tree)
 
 # Tree models are computationally intensive techniques for recursively 
 # partitioning response variables into subsets based on their relationship to 

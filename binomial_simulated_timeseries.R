@@ -31,7 +31,7 @@ a = filter(sim, filter = c(1, -.9), method="recursive")
 png("c:/Users/Nate/Git/riemann/binomial_simulated_timeseries.png")
 plot.ts(sim,
         y=NULL, 
-        main="Time Series Plot of Simulated Binomial Processes (n =300)", 
+        main="Time Series Plot of Simulated Binomial Processes (n = 300)", 
         axes = TRUE,
         ylab = "White Noise Processes",
         xlab = "Time",
