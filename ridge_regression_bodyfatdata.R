@@ -37,3 +37,8 @@ sum(resid(bodyfat.reg)^2)
 
 # As is shown, the SSE for the ridge-regression fit is not much higher, which is good.
 # SSE Ridge = 101.7287 vs SSE OLS = 98.40489
+# Note that, if lambda is greater than 0, the SSE for ridge regression will always
+# be higher than the SSE for ordinary least squares ....
+# A better test of the model may be in fact to test the prediction accuracy using
+# the first 18 data points as a training set ... with the final 2 being predictors
+# being the test set ...
