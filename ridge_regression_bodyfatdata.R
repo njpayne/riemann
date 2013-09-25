@@ -10,7 +10,7 @@ library(MASS) # Load the MASS package
 # For this code, I will used R's automatic selection methods to select the biasing constant:
 # R calls this constant "lambda"; Be sure to do this after loading the MASS package
 select(lm.ridge(bodyfat ~ triceps + thigh + midarm, lambda = seq(0,1,0.001)))
-# The generalized cross-validation (GCV) criterion is the smallest at 0.19
+# The generalized cross-validation (GCV) criterion is the smallest at 0.019
 # Thus, we conclude that the optimal biasing constant occurs at .019
 bodyfat.ridge.reg <- lm.ridge(bodyfat ~ triceps + thigh + midarm, lambda = .019)
 
