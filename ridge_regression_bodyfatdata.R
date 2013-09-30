@@ -27,7 +27,8 @@ X.matrix <- cbind(rep(1,length=length(bodyfat)),triceps, thigh, midarm)
 fitted.vals <- X.matrix %*% c(43.840113, 2.117493, -0.959731, -1.018061)
 
 # The SSE for the ridge-regression fit can be generated using the following code:
-sse.ridge <- sum((bodyfat-fitted.vals)^2); sse.ridge
+(sse.ridge <- sum((bodyfat-fitted.vals)^2)) # This creates the object and prints the object
+# sse.ridge .... This is replaced by the brackets in the line above ...
 
 # On the other hand, the original least-squares fit
 bodyfat.reg <- lm(bodyfat ~ triceps + thigh + midarm)
