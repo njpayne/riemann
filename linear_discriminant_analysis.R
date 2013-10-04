@@ -66,7 +66,6 @@ conv.hull <- chull(my.x1.inside, my.x2.inside)
 polygon(my.x1.inside[conv.hull], my.x2.inside[conv.hull])
 dev.off()
 
-
 # Let us review the individual t-based CIs for each of the two variables
 t.test(satmult[,1])$conf.int  # 95% CI for mean math score
 t.test(satmult[,2])$conf.int  # 95% CI for mean reading score
