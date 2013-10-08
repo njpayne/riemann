@@ -27,5 +27,5 @@ attach(skulls) # Attach the skulls data frame
 newobs <- rbind( c(135,144,97,53) )
 dimnames(newobs) <- list(NULL,c('MB','BH', 'BL', 'NH'))
 newobs <- data.frame(newobs)
-predict(skull.lda,newdata=newobs)
+(predict(skull.lda,newdata=newobs))
 # As wee see, we predict that the year will be 1850BC based on the data provided
