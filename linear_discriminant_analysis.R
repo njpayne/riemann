@@ -7,13 +7,15 @@
 # The follow up dataset shows the relative status (whether the individual graduated from their program)
 satmult <- read.table("c:/Users/Nate/Git/riemann/SATscoresmult.txt", 
                       header=T)
-
 my.n <- nrow(satmult)  # How many individuals are in the dataset; There are 40 individuals
 xbar.sat <- apply(satmult, 2, mean) # Sample mean vectors for the SAT scores data
 my.q <- length(xbar.sat)  # number of variables; There are 3 variables in the sample mean vector
 
 # What does the sample covariance matrix for the SAT scores data look like? 
-S.sat <- var(satmult)
+(S.sat <- var(satmult))
+
+# What is the correlation between the various variables?
+cor(satmult)
 
 # Let's first do a test to see whether the mean vector is equal to (500, 500, 500)'
 mu.0 <- c(500, 500, 500)
@@ -28,12 +30,11 @@ mu.0 <- c(500, 500, 500)
 # Calculate Hotelling T^2, the F-statistic, and the P-value
 T2 <-  my.n * t(xbar.sat - mu.0) %*% solve(S.sat) %*% (xbar.sat - mu.0)
 Fstat <- ( (my.n - my.q) / ((my.n-1)*my.q) ) * T2
-pvalue <- 1-pf(Fstat, my.q, my.n-my.q)
+(pvalue <- 1-pf(Fstat, my.q, my.n-my.q))
 
 # Print the output from the previous calculation
 print(paste("Hotelling T^2 =", round(T2,4), 
             "F=", round(Fstat,4), "P-value =", round(pvalue,4)))
-
 
 # Now, let us plot a 2-D confidence ellipse for the mean vector for the math and reading scores
 my.q <- 2  # since now we are just focusing on the math and reading variables
