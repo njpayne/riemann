@@ -1,0 +1,21 @@
+"Age" "Gender" "Residence" "Rate"
+"1" "50-54" "Male" "Rural" 11.7
+"2" "55-59" "Male" "Rural" 18.1
+"3" "60-64" "Male" "Rural" 26.9
+"4" "65-69" "Male" "Rural" 41.0
+"5" "70-74" "Male" "Rural" 66.0
+"6" "50-54" "Female" "Rural"  8.7
+"7" "55-59" "Female" "Rural" 11.7
+"8" "60-64" "Female" "Rural" 20.3
+"9" "65-69" "Female" "Rural" 30.9
+"10" "70-74" "Female" "Rural" 54.3
+"11" "50-54" "Male" "Urban" 15.4
+"12" "55-59" "Male" "Urban" 24.3
+"13" "60-64" "Male" "Urban" 37.0
+"14" "65-69" "Male" "Urban" 54.6
+"15" "70-74" "Male" "Urban" 71.1
+"16" "50-54" "Female" "Urban"  8.4
+"17" "55-59" "Female" "Urban" 13.6
+"18" "60-64" "Female" "Urban" 19.3
+"19" "65-69" "Female" "Urban" 35.1
+"20" "70-74" "Female" "Urban" 50.0
