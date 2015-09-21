@@ -1,4 +1,4 @@
-# Example Linear programming solution
+# Example Linear programming solution - PC Express
 # Created by: Nathaniel Payne
 # September 20, 2015
 
